@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Shrink/URL</h1>
+    <form action="/post-url" class="form" method="POST" autocomplete="off">
+      <input  type="text" class="url" name="url" placeholder="Original URL" value="<%= content %>">
+      <input type="submit" class="submit" value="Shrink">
+    </form>
+  </div>
+  <footer>©2023 Abainza</footer>
+</body>
+</html>

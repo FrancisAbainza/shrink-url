@@ -1,0 +1,97 @@
+:root {
+  --large: 2.813rem;
+  --small: 0.875rem;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+  padding: 35vh 1em 0 1em;
+  background-color: #212121;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75em;
+}
+.wrapper h1 {
+  color: white;
+  font-size: var(--large);
+  font-family: "Space Mono", monospace;
+  font-weight: normal;
+}
+.wrapper .form {
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+  background-color: #F2F2F2;
+  border-radius: 12px;
+  padding-left: 0.75em;
+}
+.wrapper .form .url {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  font-size: var(--small);
+}
+.wrapper .form .url:focus {
+  outline: none;
+}
+.wrapper .form .submit {
+  background-color: #21A300;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.75em;
+  font-size: var(--small);
+  cursor: pointer;
+}
+.wrapper .form .submit:hover {
+  background-color: #198000;
+}
+
+footer {
+  position: absolute;
+  left: 50%;
+  bottom: 0.75em;
+  transform: translateX(-50%);
+  color: rgb(129, 129, 129);
+  font-size: var(--small);
+}
+
+@media only screen and (min-width: 768px) {
+  :root {
+    --large: 3.25rem;
+    --small: 1.25rem;
+  }
+  body {
+    padding: 35vh 4.25em 0 4.25em;
+  }
+  .wrapper {
+    gap: 1.5em;
+  }
+  .wrapper .form .submit {
+    padding: 0.75em 1.5em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper {
+    width: 850px;
+  }
+}/*# sourceMappingURL=main.css.map */
