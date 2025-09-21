@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 
 app.post("/post-url", async (req, res) => {
   try {
-    const result = await axios.post("https://cleanuri.com/api/v1/shorten", req.body);
+    const result = await axios.post(API_URL, req.body);
     res.render("index.ejs", {
       content: result.data.result_url
     })
